@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoBot - Entre Todos Podemos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navbar -->
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">EcoBot</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#explicacion">Explicación Científica</a></li>
+          <li><a href="#about">Quiénes Somos</a></li>
+          <li><a href="#instructivo">Instructivo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Inicio -->
+  <section id="inicio" class="hero-section">
+    <div class="container">
+      <h2>¿Alguna vez te preguntaste cómo cuidar la energía de tu casa?</h2>
+      <p>Te ayudamos a cuidar tu casa, tu economía y al planeta juntos con EcoBot.</p>
+    </div>
+  </section>
+
+  <!-- Sección Explicación Científica -->
+  <section id="explicacion" class="section-padding">
+    <div class="container">
+      <h2>Explicación Científica</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Transición Energética al Alcance</h3>
+          <p>Muchas personas quieren cuidar el medio ambiente pero se sienten abrumadas por la terminología técnica o los altos costos. Con herramientas accesibles y hábitos sencillos, cada hogar puede generar un impacto positivo y reducir el consumo innecesario de energía.</p>
+        </div>
+        <div class="card">
+          <h3>Causas de la Transición Energética</h3>
+          <p>La transición energética consiste en pasar del uso de combustibles fósiles a fuentes limpias y sostenibles. Para lograrlo no solo se necesitan grandes industrias, sino también la participación ciudadana activa desde casa mediante pequeñas acciones de eficiencia energética.</p>
+        </div>
+        <div class="card">
+          <h3>¿Se Puede Contribuir?</h3>
+          <p>Descubrimos que como sociedad no participamos del debate por el consumo de energía de manera frecuente, pero podemos como jóvenes formar parte de su solución. Pensando medidas realizables desde nuestro lugar o contribuyendo con el conocimiento y tecnología.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Quiénes Somos -->
+  <section id="about" class="section-padding bg-light">
+    <div class="container">
+      <h2>Quiénes Somos</h2>
+      
+      <div class="quienes-somos-content">
+        <!-- Texto explicativo -->
+        <div class="texto-container">
+          <h3>¿Cómo surgió la idea?</h3>
+          <p>
+            ¡Hola! Nosotras somos alumnas del Nivel Medio del Colegio Fasta San Vicente de Paúl de Devoto.
+          </p>
+          <p>
+            Gracias a lo visto en la materia de TICS (Tecnologías de la Comunicación e Información) hemos podido elaborar un proyecto que materializa nuestra idea de hacer poco a poco un mundo mejor.
+          </p>
+          <p>
+            Con ayuda de nuestra formación e interés, desarrollamos esta campaña sustentada por nuestro invento, el <strong>EcoBot</strong>, que contribuye a mejorar la economía, la salud y la información ecológica de los hogares.
+          </p>
+          <p class="gracias-mensaje">¡Gracias por Seguirnos!</p>
+        </div>
+
+        <!-- Imagen del grupo con su nombre de archivo exacto -->
+        <div class="imagen-container">
+          <img src="grupo.png.PNG" alt="Equipo de creadoras de EcoBot" class="img-responsive shadow-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Instructivo de Armado -->
+  <section id="instructivo" class="section-padding">
+    <div class="container">
+      <h2>Instructivo de Armado</h2>
+      <p class="subtitulo">Ahora puedes armar tu propio EcoBot en casa con ayuda de la tecnología, la programación y lo que sabemos de ecología.</p>
+
+      <!-- Foto principal del Robot -->
+      <div class="robot-destacado">
+        <img src="robot-final.png.png" alt="EcoBot Terminado" class="img-responsive img-main-robot">
+      </div>
+
+      <!-- Materiales -->
+      <div class="materiales-block">
+        <h3>Materiales Necesarios</h3>
+        <p>Para armar este dispositivo ecológico necesitarás los siguientes elementos:</p>
+        <div class="materiales-content">
+          <ul>
+            <li>Placa BBC micro:bit (con sensor de luz y micrófono integrado).</li>
+            <li>Placa de pruebas (protoboard) con adaptador de extensión de pines.</li>
+            <li>Un diodo LED.</li>
+            <li>Un buzzer o zumbador (parlante).</li>
+            <li>Resistencias para la regulación de energía.</li>
+            <li>Cables de conexión (jumpers).</li>
+            <li>Cable de alimentación o conexión USB.</li>
+          </ul>
+          <div class="materiales microbit.png">
+            <img src="materiales microbit.png" alt="Micro:bit con su batería" class="img-responsive shadow-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Paso a Paso -->
+      <div class="paso-a-paso-block">
+        <h3>Paso a Paso</h3>
+        <p>Podemos realizar nuestro robot ecológico en tres sencillos pasos:</p>
+
+        <ol class="pasos-lista">
+          <li>
+            <strong>1. Ensamblar el circuito:</strong> Conecta la micro:bit a la placa de pruebas, vinculando el LED al pin P1 (con su resistencia) y el buzzer al pin P2 mediante los cables de conexión.
+            <div class="paso-imagen">
+              <img src="conexiones microbit 2.png" alt="Conexiones en la protoboard" class="img-responsive shadow-img">
+            </div>
+          </li>
+          <li>
+            <strong>2. Programar la micro:bit:</strong> En MakeCode, configura el sensor para que mida la luz y, si permanece encendida más de 2 horas, muestre el mensaje "APAGA LA LUZ" y encienda el LED con el buzzer.
+          </li>
+          <li>
+            <strong>3. Configurar la interacción:</strong> Utiliza el micrófono para que la alarma se apague con dos aplausos, o haz que se desactive automáticamente tras 5 minutos para no malgastar energía.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>#ENTRETODOSPODEMOS &copy; 2026 EcoBot Project</p>
+    </div>
+  </footer>
+
+</body>
+</html>
